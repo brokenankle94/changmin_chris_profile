@@ -1,0 +1,71 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="static/styles.css">
+  </head>
+  <body>
+  <div class="header">
+   <h1>Chang Min's Profile Page</h1>
+  </div>
+  <div class="subheader">
+   <p>
+     이 페이지는 "개발 경험 0인 이창민이 Chatgpt4.0과 함께 자기소개 페이지를 만들면 얼마나 걸릴까?"<br>
+     라는 실험을 배경으로 만들어진 페이지입니다.<br>
+     제작에는 현업과 병행하여 7일 소요되었습니다.<br> </p>
+  </div>
+  <div class="card-container">
+   <div class="card" id="card1" style="display: block;">
+     <img src="static/20221122%20FLASK127694.jpg" alt="Profile Photo" class="profile-photo">
+     <h2>Chris ChangMin Lee</h2>
+     <p class="intro">Credentialed Actuary with insurance consulting, reinsurance, and IT Startup experiences</p>
+     <button class="next-button" onclick="showNextCard()">Next</button>
+     <a href="https://www.linkedin.com/in/chrislee9407/" target="_blank" class="linkedin-logo-link">
+       <img src="static/LI-In-Bug.png" alt="LinkedIn Profile" class="linkedin-logo">
+     </a>
+     <button class="next-button" onclick="showNextCard()">Next</button>
+   </div>
+   <div class="card" id="card2" style="display: none;">
+     <h2>보유 자격증</h2>
+     <img src="static/soa.jpeg" alt="자격증 이미지" class="cardmain-image">
+     <p class="intro">미국 계리사 자격증 ASA <br>
+       (Associate of the Society of Actuaries)</p>
+     <p class="more-info">
+         <a href="https://m.blog.naver.com/hc3120/120014589073" target="_blank">계리사 및 ASA에 대해 더 알아보기</a>
+     </p>
+     <button class="next-button" onclick="showNextCard()">Next</button>
+  </div>
+   <div class="card" id="card3" style="display: none;">
+     <h2>현 직장</h2>
+      <img src="static/Flask%20logo.png" alt="FLASK 로고" class="cardmain-image">
+     <p class="description">
+       회사:<br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FLASK <br><br>
+       기간: <br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2022.06 ~ Present <br><br>
+       직무: <br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 전략 &amp; 운영 <br><br>
+       진행 프로젝트: <br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 블록체인 이력 뱃지 발급 플랫폼 <br><br>
+       관련 웹사이트: <br>
+       <span class="small-text">
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://flask.global/" target="_blank">회사 소개</a> <br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://naoda.xyz/" target="_blank">NAODA Project</a> <br>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="https://dune.com/chrislee" target="_blank">[창민제작] 블록체인 데이터 분석 SQL 대시보드 모음 </a>
+       </span>
+     </p>
+     <button class="next-button" onclick="showNextCard()">Next</button>
+   </div>
+   <div class="card" id="card4" style="display: none;">
+     <h2>Card4</h2>
+     <p>Card4</p>
+     <button class="next-button" onclick="showNextCard()">Next</button>
+   </div>
+   <div class="card" id="card5" style="display: none;">
+     <h2>Card5</h2>
+     <p>Card5</p>
+     <button class="next-button" onclick="showNextCard()">Next</button>
+   </div>
+  </div>
+  <script src="static/scripts.js"></script>
+  </body></html>
