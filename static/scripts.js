@@ -42,7 +42,29 @@ function showNextCard() {
     nextCard.style.display = 'block';
     console.log("카드 표시:", 'card' + currentCardIndex);
   } else {
-    alert('더 이상 카드가 없습니다.');
-    console.log("더 이상 카드가 없음");
+    // 추가된 부분 시작: 새로운 카드가 없으면 추가 카드를 표시
+    var finalCard = document.getElementById('card6');
+    if (finalCard) {
+      finalCard.style.display = 'block';
+      console.log("마지막 카드 표시: card6");
+    } else {
+      alert('더 이상 카드가 없습니다.');
+      console.log("더 이상 카드가 없음");
+    }
+}
+  function showFirstCard() { // 추가된 함수
+  // 모든 카드를 숨깁니다.
+  const allCards = document.querySelectorAll('.card');
+  allCards.forEach(card => {
+    card.style.display = 'none';
+  });
+
+  // 첫 번째 카드를 표시합니다.
+  var firstCard = document.getElementById('card1');
+  if (firstCard) {
+    firstCard.style.display = 'block';
   }
+
+  // 현재 카드 인덱스를 초기화합니다.
+  currentCardIndex = 1;
 }
