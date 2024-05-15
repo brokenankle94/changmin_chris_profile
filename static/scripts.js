@@ -22,8 +22,6 @@ function hideAllCardsExceptFirst() {
   });
 }
 
-
-
 function showNextCard() {
   console.log("현재 카드 인덱스 (함수 시작):", currentCardIndex);
   var currentCard = document.getElementById('card' + currentCardIndex);
@@ -51,8 +49,12 @@ function showNextCard() {
       alert('더 이상 카드가 없습니다.');
       console.log("더 이상 카드가 없음");
     }
+    // 추가된 부분 끝
+  }
 }
-  function showFirstCard() { // 추가된 함수
+
+// "처음으로" 버튼을 클릭하면 첫 카드로 돌아가도록 하는 함수
+function showFirstCard() { // 추가된 함수
   // 모든 카드를 숨깁니다.
   const allCards = document.querySelectorAll('.card');
   allCards.forEach(card => {
